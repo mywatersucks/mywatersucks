@@ -39,3 +39,10 @@ CREATE TABLE `users` (
   `location_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+DROP TABLE IF EXISTS `authentications`;
+CREATE TABLE `authentications` (
+  `uname` varchar(20) DEFAULT NULL,
+  `pwhash` varchar(200) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
